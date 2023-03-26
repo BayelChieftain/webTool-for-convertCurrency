@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Currency Converter</title>
 </head>
 <body>
+ <div class="container glass">
+     <h1>Convert RUB</h1>
+   <div class="container__item">
     <input type="number" class="js-input">
+    <div class="select">
     <select class="js-currency-slc">
+        <option selected disabled>choose currency</option>
         <option value="usd">USD</option>
         <option value="eur">EUR</option>
         <option value="som">SOM</option>
@@ -22,10 +31,11 @@
         <option value="try">TRY</option>
         <option value="uah">UAH</option>
     </select>
-    <div class="js-output">
-        result
-    </div>
-
+</div>
+    <span>result:</span>
+    <div class="js-output"> </div>
+ </div>
+</div>
     <script src="index.js"></script>
     <script src="converter.js"></script>
 </body>
