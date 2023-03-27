@@ -41,19 +41,6 @@ select {
     background: rgb(211,211,215);
     background: linear-gradient(90deg, rgba(124,124,124,0.27344992050874406) 0%, rgba(0,236,43,0.7965023847376789) 100%);
     padding: 5px;
-    animation: gradientSelect 10s ease infinite;
-}
-
-@keyframes gradientSelect {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
 }
 
 .select {
